@@ -25,7 +25,9 @@ const config: Configuration = {
     ]
   },
   plugins: [
-    new HtmlWebpackPlugin() as any
+    new HtmlWebpackPlugin({
+      template: './index.html'
+    }) as any
   ]
 }
 
